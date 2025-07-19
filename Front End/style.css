@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding-bottom: 3.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f9fafb;
+}
+
+#form {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: auto;
+  box-sizing: border-box;
+  --we-backdrop-filter: blur(4px);
+}
+
+#input {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 1rem;
+  flex-grow: 1;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+#input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+#form > button {
+  background: #3b82f6;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#form > button:hover {
+  background: #2563eb;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages > li {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.sender {
+  align-self: flex-start;
+  background: #e5e7eb;
+}
+
+.receiver {
+  align-self: flex-end;
+  background: #3b82f6;
+  color: #fff;
+}
+
+#typingIndicator {
+  font-style: italic;
+  color: #6b7280;
+  padding: 0.25rem 1rem;
+  flex-basis: 100%;
+}
+
+#disconnect {
+  font-style: italic;
+  color: #ef4444;
+  text-align: center;
+  flex-basis: 100%;
+  padding: 0.25rem 0;
+}
+
+p {
+  margin: 0;
+}
